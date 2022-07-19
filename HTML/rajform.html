@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: center;
+        padding: 0px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    form div input{
+        position: absolute;
+        background: aqua;
+    }
+
+    h2 {
+
+        display: inline-block;
+        border-bottom: 2px solid rgb(143, 10, 132);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+
+    }
+
+    body {
+
+        position: absolute;
+        background-image: url('https://silveroakuni.ac.in/upload/Celebrity%20at%20SOU/1-(8).jpg');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: cover;
+        object-fit: cover;
+
+
+    }
+</style>
+
+<body style="border-radius: 5px">
+    <form action="backend.php">
+        <h2>SILVER OAK UNIVERSITY 2K20 FRESHERS</h2>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="myname" id="name" placeholder="enter your name">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="myemail" id="email" placeholder="enter your email">
+        </div>
+        <br>
+        <div>
+            <label for="field">Field</label>
+            <input type="text" name="myfield" id="field" placeholder="enter your field name">
+        </div>
+        <br>
+        <div>
+            <label for="class">Class</label>
+            <input type="text" name="myclass" id="class" placeholder="enter your class">
+        </div>
+        <br>
+        <div>
+            <label for="collage">collage Name</label>
+            <select name="mycollage" id="collage">
+                <option value="SILVER OAK">SILVER OAK</option>
+                <option value="ADITYASILVER OAK">ADITYASILVER OAK</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="gender">gender</label>
+            male <input type="radio" name="mygender" id="gender"> female <input type="radio" name="mygender"
+                id="gender"> other <input type="radio" name="mygender" id="gender">
+        </div>
+        <br>
+        <div>
+            <label for="gender">About your self in 50 words</label>
+            <br> <textarea name="mytext" id="mytext" cols="50" rows="5"></textarea>
+        </div>
+        <br>
+
+    </form>
+
+</body>
+
+</html>
